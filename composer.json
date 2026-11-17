@@ -1,0 +1,13 @@
+{
+  "name": "local/php-shift-left-demo",
+  "description": "Intentionally vulnerable PHP app for testing the security workflow",
+  "type": "project",
+  "license": "proprietary",
+  "require": {
+    "php": "^8.1",
+    "symfony/http-foundation": "^5.4"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
