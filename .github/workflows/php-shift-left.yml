@@ -101,7 +101,6 @@ jobs:
 
   dependency-check:
     name: Dependency Audit (composer)
-    if: hashFiles('composer.json') != '' && hashFiles('composer.lock') != ''
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -124,7 +123,6 @@ jobs:
 
   sbom:
     name: SBOM (Trivy CycloneDX)
-    if: hashFiles('composer.lock') != ''
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
