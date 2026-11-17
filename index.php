@@ -15,3 +15,4 @@ $name = $_GET['name'] ?? 'Guest';
 
 // Deliberately unsafe: user input is rendered without HTML escaping.
 echo '<h1>Hello, ' . $name . '</h1>';
+
